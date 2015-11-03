@@ -2,8 +2,6 @@ package com.codility;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Arrays;
-
 /**
  * Created by vijaykedia on 18/10/15.
  */
@@ -14,7 +12,7 @@ public class EquilibriumIndex {
         System.out.print(equilibriumIndex(input, 1));
     }
 
-    public static int equilibriumIndex(@NotNull final int[] A, final int X) {
+    private static int equilibriumIndex(@NotNull final int[] A, final int X) {
         final int[] index = new int[A.length];
         int j = 0;
         for (int i = 0; i < A.length; i++) {
